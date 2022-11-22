@@ -10,7 +10,7 @@ public class PlayerControllerX : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+	GetComponent<Rigidbody>().centerOfMass = new Vector3(0, -1, 0);
     }
 
     // Update is called once per frame
@@ -22,10 +22,10 @@ public class PlayerControllerX : MonoBehaviour
 	                	transform.Translate(Vector3.back * Time.deltaTime * 50);
             }
             if(Input.GetKey(KeyCode.D)) {
-	    	                	transform.Rotate(Vector3.up * Time.deltaTime * 50);
+	    	                	transform.Rotate(Vector3.up * Time.deltaTime * 70);
             }
             if(Input.GetKey(KeyCode.A)) {
-	    	                	transform.Rotate(Vector3.down * Time.deltaTime * 50);
+	    	                	transform.Rotate(Vector3.down * Time.deltaTime * 70);
             }
        
     }
