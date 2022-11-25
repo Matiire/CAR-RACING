@@ -10,7 +10,7 @@ public class PlayerControllerX : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-	GetComponent<Rigidbody>().centerOfMass = new Vector3(0, -1, 0);
+	GetComponent<Rigidbody>().centerOfMass = new Vector3(0, -3, 0);
     }
 
     // Update is called once per frame
